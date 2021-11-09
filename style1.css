@@ -1,0 +1,138 @@
+/* Header */
+header{
+    background-color: gainsboro;
+}
+
+.headnav, .main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.unchecked, .search, .footnav{
+    display: flex;
+    align-items: center;
+}
+
+.unchecked h2{
+    padding-left: 10px;
+}
+
+.ulheadnav{
+    display: flex;
+    margin-right: 600px;
+    list-style: none;
+    padding: 0;
+}
+
+.li1, .li2{
+    margin: 0 20px;
+}
+
+/* Main */
+main{
+    height: 450px;
+}
+
+.urcart{
+    margin: 10px 0;
+}
+
+.table1{
+    width: 900px;
+}
+
+.hr{
+    margin: 10px 0;
+}
+
+.thmain{
+    text-align: start;   
+}
+
+.baju{
+    display: flex;
+    margin: 15px 0;
+}
+
+.baju img{
+    width: 150px;
+    height: 160px;
+}
+
+.tshirt{
+    margin: 55px 0 0 20px;
+}
+
+.quantity{
+    width: 20%;
+}
+
+.sec{
+    background-color: gainsboro;
+    padding: 30px;
+}
+
+.summary{
+    padding: 10px 0;
+}
+
+.box{
+     width: 270px;
+}
+
+.tdbox{
+    padding: 10px 0;
+}
+
+.tdbox2{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.input{
+    width: 100%;
+    padding: 7px 0;
+    background-color: blue;
+    color: white;
+}
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    padding: 15px;
+    margin: 0 auto;
+}
+.lifootnav{
+    display: flex;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.imgfoot{
+    margin-left: -2px;
+}
+
+.h4foot{
+    margin-right: 30px;
+}
+
+.stay{
+    margin: 2px 0;
+}
+
+.input1{
+    padding: 5px;
+}
+
+.button{
+    background-color: grey;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+}

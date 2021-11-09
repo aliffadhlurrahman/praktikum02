@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="shortcut icon" href="img/icons8-document-24.png">
+    <link rel="stylesheet" href="style1.css">
     <style>
         * {
             margin: 0;
@@ -16,86 +17,69 @@
 </head>
 
 <body>
-    <header style="background-color: gainsboro;">
-        <nav
-            style="display: flex; justify-content: space-between; align-items: center; width: 95%; margin: 0 auto; padding: 25px 0;">
-            <div style="display: flex; align-items: center;">
-                <table>
-                    <thead>
-                        <tr>
-                            <td>
-                                <img style="margin-right: 2px;" src="img/icons8-unchecked-checkbox-24.png"
-                                    alt="unchecked_icon">
-                            </td>
-                            <td style="padding-bottom: 3px;">
-                                <h2 style="margin-right: 50px;">Site Name</h2>
-                            </td>
-                        </tr>
-                    </thead>
-                </table>
+    <header>
+        <nav class="headnav">
+            <div class="unchecked">
+                <img src="img/icons8-unchecked-checkbox-24.png" alt="unchecked_icon">
+                <h2>Site Name</h2>
             </div>
             <div>
-                <ul style="display: flex; margin-right: 600px; list-style: none; padding: 0;">
-                    <li><a href="#" style="margin: 0 20px">Categori 1</a>|</li>
-                    <li><a href="#" style="margin: 0 20px">Categori 2</a>|</li>
-                    <li><a href="#" style="margin: 0 20px">Categori 3</a></li>
+                <ul class="ulheadnav">
+                    <li class="li1"><a href="#">Categori 1</a></li>
+                    <li>|</li>
+                    <li class="li1"><a href="#">Categori 2</a></li>
+                    <li>|</li>
+                    <li class="li1"><a href="#">Categori 3</a></li>
                 </ul>
             </div>
-            <div>
-                <table>
-                    <tr>
-                        <td><a href="#"><img src="img/icons8-search-24.png" alt="search_icon"></a></td>
-                        <td><a href="#"><img src="img/icons8-shopping-cart-96.png" alt="shopping_icon" style="height: 24px;"></a>
-                        </td>
-                        <td><a href="#" style="text-decoration: none; color: black;">
-                                <h3>Cart (1)</h3>
-                            </a></td>
-                    </tr>
-                </table>
+            <div class="search">
+                <a href="#"><img src="https://img.icons8.com/material/24/000000/search--v1.png" /></a>
+                <a href="#"><img src="https://img.icons8.com/material/24/000000/shopping-cart--v1.png" /></a>
+                <h3>Cart (1)</h3>
             </div>
         </nav>
     </header>
-    <hr style="margin: 0; padding: 0;">
-    <main style="height: 450px;">
-        <div
-            style="display: flex; align-items: center; justify-content: space-between; width: 95%; margin: 0 auto; padding: 30px 0;">
+    <hr>
+    <main>
+        <div class="main">
             <section>
-                <h2 style="margin: 10px 0;">Your Cart</h2>
-                <table style="width: 900px;">
+                <h2 class="urcart">Your Cart</h2>
+                <table class="table1">
                     <thead>
                         <tr>
                             <th colspan="3">
-                                <hr style="margin: 10px 0;">
+                                <hr class="hr">
                             </th>
                         </tr>
                         <tr>
-                            <th style="text-align: start;">Item</th>
-                            <th style="width: 150px; text-align: start;">Price</th>
-                            <th style="width: 150px; text-align: start;">Quantity</th>
+                            <th class="thmain">Item</th>
+                            <th class="thmain">Price</th>
+                            <th class="thmain">Quantity</th>
                         </tr>
                         <tr>
                             <th colspan="3">
-                                <hr style="margin: 10px 0;">
+                                <hr class="hr">
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <figure style="display: flex; text-align: center; margin: 15px 0;">
-                                    <img src="img/baju_polos.webp" alt="baju_picture"
-                                        style="height: 160px; width: 150px;">
-                                    <div style="margin-left: 20px;">
-                                        <p style="margin: 60px 0; margin-right: 25px;">T-Shirt</p>
-                                        <p style="margin: -50px 0;">Size Small</p>
+                                <div class="baju">
+                                    <div>
+                                        <img src="img/baju_polos.webp" alt="baju_picture">
                                     </div>
-                                </figure>
+                                    <div class="tshirt">
+                                        <p>T-Shirt</p>
+                                        <p>Size Small</p>
+                                    </div>
+                                </div>
                             </td>
                             <td>
                                 <h3><b>$20.00</b></h3>
                             </td>
                             <td>
-                                <select name="quantity" id="quantity" style="width: 50%;">
+                                <select class="quantity" name="quantity" id="quantity">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -106,7 +90,7 @@
                         </tr>
                         <tr>
                             <th colspan="3">
-                                <hr style="margin: 10px 0;">
+                                <hr class="hr">
                             </th>
                         </tr>
                         <tr>
@@ -116,41 +100,40 @@
                         </tr>
                         <tr>
                             <th colspan="3">
-                                <hr style="margin: 10px 0;">
+                                <hr class="hr">
                             </th>
                         </tr>
                     </tbody>
                 </table>
             </section>
-            <section style="background-color: gainsboro; padding: 30px;">
-                <h3 style="padding: 10px 0; margin: 0;">Summary (1 item)</h3>
-                <table style="width: 270px;">
+            <section class="sec">
+                <h3 class="summary">Summary (1 item)</h3>
+                <table class="box">
                     <tbody>
                         <tr>
-                            <td style="padding: 10px 0;">Subtotal</td>
-                            <td style="padding: 10px 0;">$20.00</td>
+                            <td class="tdbox">Subtotal</td>
+                            <td class="tdbox">$20.00</td>
                         </tr>
                         <tr>
-                            <td style="padding: 10px 0;">Shipping</td>
-                            <td style="padding: 10px 0;">-</td>
+                            <td class="tdbox">Shipping</td>
+                            <td class="tdbox">-</td>
                         </tr>
                         <tr>
-                            <td style="padding: 10px 0;">Est. Texas</td>
-                            <td style="padding: 10px 0;">-</td>
+                            <td class="tdbox">Est. Texas</td>
+                            <td class="tdbox">-</td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <hr style="margin: 10px 0;">
+                                <hr class="hr">
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding: 10px 0;"><b>Total</b></td>
-                            <td style="padding: 10px 0;"><b>$20.00</b></td>
+                            <td class="tdbox"><b>Total</b></td>
+                            <td class="tdbox"><b>$20.00</b></td>
                         </tr>
                         <tr>
-                            <td colspan="2" style="padding: 10px 0; text-align: center;">
-                                <input type="submit" value="Checkout"
-                                    style="width: 100%; padding: 7px 0; background-color: blue; color: white;">
+                            <td class="tdbox2" colspan="2">
+                                <input class="input" type="submit" value="Checkout">
                                 <form action="checkout_0110121172_aliffadhlurrahman.html" method="post"></form>
                             </td>
                         </tr>
@@ -159,21 +142,30 @@
             </section>
         </div>
     </main>
-    <hr style="margin: 0; padding: 0;">
-    <footer style="display: flex; justify-content: space-between; width: 95%; padding: 15px 0; margin: 0 auto;">
-        <nav style="display: flex; align-items: center;">
-            <h4 style="margin-right: 30px;">Site Name</h4>
-            <ul style="display: flex; list-style: none; padding: 0;">
-                <li><a href="#" style="margin: 0 20px;">Categori X</a>|</li>
-                <li><a href="#" style="margin: 0 20px;">Categori Y</a>|</li>
-                <li><a href="#" style="margin: 0 20px;">Categori Z</a></li>
+    <hr>
+    <footer>
+        <nav class="footnav">
+            <div>
+                <h4 class="h4foot">Site Name</h4>
+                <div class="imgfoot">
+                    <img src="https://img.icons8.com/material/24/000000/visa--v1.png" />
+                    <img src="https://img.icons8.com/material/24/000000/mastercard.png" />
+                    <img src="https://img.icons8.com/material/24/000000/bank-card-back-side--v1.png" />
+                </div>
+            </div>
+            <ul class="lifootnav">
+                <li class="li2"><a href="#">Categori X</a></li>
+                <li>|</li>
+                <li class="li2"><a href="#">Categori Y</a></li>
+                <li>|</li>
+                <li class="li2"><a href="#">Categori Z</a></li>
             </ul>
         </nav>
         <nav>
-            <p style="margin: 2px 0;">Stay In Touch! Join our <b>Newsletter</b></p>
+            <p class="stay">Stay In Touch! Join our <b>Newsletter</b></p>
             <div>
-                <input type="email" placeholder="Enter Email" style="padding: 5px;">
-                <button style="padding: 5px; background-color: grey; font-weight: bold; color: white;">Subcribe</button>
+                <input class="input1" type="email" placeholder="Enter Email">
+                <button class="button">Subcribe</button>
             </div>
         </nav>
     </footer>
